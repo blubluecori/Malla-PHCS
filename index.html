@@ -1,14 +1,20 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Malla Interactiva</title>
-  <link rel="stylesheet" href="styles.css" />
+  <meta charset="UTF-8">
+  <title>Malla Interactiva - Pedagogía en Historia</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>Malla Interactiva</h1>
-  <div class="grid" id="grid"></div>
+  <h1>Malla de Pedagogía en Historia</h1>
+  <button onclick="guardarProgreso()">Guardar progreso</button>
+  <button onclick="reiniciarProgreso()">Reiniciar progreso</button>
+
+  <div class="malla">
+    <!-- Aquí se inserta dinámicamente la malla -->
+  </div>
+
+  <p id="descripcion">Haz clic en un ramo para ver su descripción y prerrequisitos.</p>
 
   <script src="script.js"></script>
 </body>
