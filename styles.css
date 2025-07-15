@@ -72,3 +72,21 @@ button {
   font-weight: bold;
   text-align: center;
 }
+/* Tooltip */
+.tooltip {
+  position: absolute;
+  background: #fffaf0;
+  border: 1px solid #ffd5a6;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  pointer-events: none;
+  transition: opacity 0.2s;
+  opacity: 0;
+  z-index: 100;
+}
+
+/* Visible state */
+.tooltip.visible {
+  opacity: 1;
+}
