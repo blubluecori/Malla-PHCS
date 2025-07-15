@@ -6,16 +6,12 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>Malla de Pedagogía en Historia</h1>
-  <button onclick="guardarProgreso()">Guardar progreso</button>
-  <button onclick="reiniciarProgreso()">Reiniciar progreso</button>
-<div id="tooltip" class="tooltip"></div>
-  
-  <div class="malla">
-    <!-- Aquí se inserta dinámicamente la malla -->
+  <h1>Malla Pedagogía en Historia</h1>
+  <div class="botones">
+    <button id="guardar">Guardar progreso</button>
+    <button id="reiniciar">Reiniciar</button>
   </div>
-
-  <p id="descripcion">Haz clic en un ramo para ver su descripción y prerrequisitos.</p>
+  <div id="malla" class="malla"></div>
 
   <script src="script.js"></script>
 </body>
