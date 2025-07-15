@@ -1,27 +1,74 @@
 body {
   font-family: sans-serif;
+  background: #fefefe;
+  color: #333;
+  padding: 20px;
+}
+
+h1 {
   text-align: center;
-  margin: 20px;
+  color: #6a6a6a;
 }
 
-.grid {
-  display: grid;
-  grid-template-columns: repeat(10, 40px);
-  grid-template-rows: repeat(10, 40px);
-  gap: 5px;
-  justify-content: center;
-  margin-top: 20px;
-}
-
-.cell {
-  width: 40px;
-  height: 40px;
-  background-color: #ddd;
-  border: 1px solid #aaa;
+button {
+  margin: 10px;
+  padding: 10px 15px;
+  background-color: #cce5ff;
+  border: none;
+  border-radius: 5px;
   cursor: pointer;
-  transition: background-color 0.3s;
 }
 
-.cell.active {
-  background-color: #4caf50;
+.malla {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.semestre {
+  border: 2px solid #ddd;
+  border-radius: 10px;
+  margin: 15px;
+  padding: 10px;
+  background-color: #fdf6ff;
+  width: 280px;
+}
+
+.semestre h2 {
+  text-align: center;
+  color: #6f42c1;
+}
+
+.ramo {
+  background-color: #ffe8cc;
+  padding: 8px;
+  margin: 6px 0;
+  border-radius: 6px;
+  cursor: pointer;
+  border: 1px solid #ffd5a6;
+  transition: background 0.3s;
+}
+
+.ramo:hover {
+  background-color: #ffe0b3;
+}
+
+.ramo.practico {
+  background-color: #cce5ff;
+  border: 1px solid #a4d0ff;
+}
+
+.ramo.practico:hover {
+  background-color: #b3daff;
+}
+
+.ramo.completado {
+  text-decoration: line-through;
+  opacity: 0.6;
+}
+
+#descripcion {
+  margin-top: 20px;
+  font-weight: bold;
+  text-align: center;
 }
