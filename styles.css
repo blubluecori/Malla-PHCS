@@ -1,92 +1,70 @@
 body {
-  font-family: sans-serif;
-  background: #fefefe;
+  font-family: 'Segoe UI', sans-serif;
+  background: #f9f9f9;
+  margin: 0;
+  padding: 2rem;
   color: #333;
-  padding: 20px;
 }
 
 h1 {
   text-align: center;
-  color: #6a6a6a;
+  color: #4A4A4A;
+}
+
+.botones {
+  text-align: center;
+  margin-bottom: 1rem;
 }
 
 button {
-  margin: 10px;
-  padding: 10px 15px;
-  background-color: #cce5ff;
+  background-color: #A3D8F4;
   border: none;
-  border-radius: 5px;
+  color: white;
+  padding: 10px 15px;
+  margin: 5px;
+  border-radius: 8px;
   cursor: pointer;
+  font-weight: bold;
+}
+
+button:hover {
+  background-color: #89CFF0;
 }
 
 .malla {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
 }
 
 .semestre {
-  border: 2px solid #ddd;
-  border-radius: 10px;
-  margin: 15px;
-  padding: 10px;
-  background-color: #fdf6ff;
-  width: 280px;
+  background-color: #fefefe;
+  border-radius: 12px;
+  padding: 1rem;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  border-left: 8px solid #FFDDC1;
 }
 
 .semestre h2 {
-  text-align: center;
-  color: #6f42c1;
+  margin-top: 0;
+  font-size: 1.2rem;
+  color: #444;
 }
 
 .ramo {
-  background-color: #ffe8cc;
-  padding: 8px;
-  margin: 6px 0;
-  border-radius: 6px;
+  background-color: #FFE4EC;
+  margin: 0.3rem 0;
+  padding: 0.6rem;
+  border-radius: 8px;
   cursor: pointer;
-  border: 1px solid #ffd5a6;
-  transition: background 0.3s;
-}
-
-.ramo:hover {
-  background-color: #ffe0b3;
+  transition: background 0.2s;
 }
 
 .ramo.practico {
-  background-color: #cce5ff;
-  border: 1px solid #a4d0ff;
-}
-
-.ramo.practico:hover {
-  background-color: #b3daff;
+  background-color: #C8E7E0;
 }
 
 .ramo.completado {
   text-decoration: line-through;
   opacity: 0.6;
-}
-
-#descripcion {
-  margin-top: 20px;
-  font-weight: bold;
-  text-align: center;
-}
-/* Tooltip */
-.tooltip {
-  position: absolute;
-  background: #fffaf0;
-  border: 1px solid #ffd5a6;
-  padding: 10px;
-  border-radius: 8px;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-  pointer-events: none;
-  transition: opacity 0.2s;
-  opacity: 0;
-  z-index: 100;
-}
-
-/* Visible state */
-.tooltip.visible {
-  opacity: 1;
 }
