@@ -1,26 +1,26 @@
 const malla = [
   {
-    semestre: 1,
+    semestre: "Semestre 1",
     ramos: [
       { nombre: "Introducción a la historia", tipo: "teórico" },
       { nombre: "Mundo antiguo", tipo: "teórico" },
-      { nombre: "Historia y filosofía de la educación en chile y latam", tipo: "teórico" },
+      { nombre: "Historia y filosofía de la educación en Chile y LATAM", tipo: "teórico" },
       { nombre: "Autorregulación", tipo: "teórico" },
       { nombre: "Introducción a la geografía", tipo: "teórico" }
     ]
   },
   {
-    semestre: 2,
+    semestre: "Semestre 2",
     ramos: [
       { nombre: "Mundo medieval", tipo: "teórico" },
-      { nombre: "Sociedades indígenas de américa y chile", tipo: "teórico" },
+      { nombre: "Sociedades indígenas de América y Chile", tipo: "teórico" },
       { nombre: "Pensamiento político y estado", tipo: "teórico" },
       { nombre: "Políticas públicas y sistema educativo chileno", tipo: "teórico" },
       { nombre: "Lenguaje y comunicación", tipo: "teórico" }
     ]
   },
   {
-    semestre: 3,
+    semestre: "Semestre 3",
     ramos: [
       { nombre: "Mundo moderno XVI-XVIII", tipo: "teórico" },
       { nombre: "América colonial XVI-XVIII", tipo: "teórico" },
@@ -31,25 +31,18 @@ const malla = [
     ]
   },
   {
-    semestre: 4,
+    semestre: "Semestre 4",
     ramos: [
-      { nombre: "Mundo contemporaneo XVIII-XIX", tipo: "teórico" },
+      { nombre: "Mundo contemporáneo XVIII-XIX", tipo: "teórico" },
       { nombre: "América siglo XIX", tipo: "teórico" },
       { nombre: "Chile siglo XIX", tipo: "teórico" },
       { nombre: "Geografía física y problemáticas medioambientales", tipo: "teórico" },
       { nombre: "Teoría del aprendizaje en el contexto de la adolescencia y cultura juvenil", tipo: "teórico" },
-      {
-        nombre: "Práctica inicial",
-        tipo: "práctico",
-        prerrequisitos: [
-          "Historia y filosofía de la educación en chile y latam",
-          "Políticas públicas y sistema educativo chileno"
-        ]
-      }
+      { nombre: "Práctica inicial", tipo: "práctico" }
     ]
   },
   {
-    semestre: 5,
+    semestre: "Semestre 5",
     ramos: [
       { nombre: "Mundo contemporáneo XX", tipo: "teórico" },
       { nombre: "América siglo XX", tipo: "teórico" },
@@ -61,154 +54,98 @@ const malla = [
     ]
   },
   {
-    semestre: 6,
+    semestre: "Semestre 6",
     ramos: [
-      { nombre: "Historia de estados unidos y américa latina", tipo: "teórico" },
-      { nombre: "Teoría de la historia geográfica de la población y de los asentamientos humanos", tipo: "teórico" },
-      { nombre: "Planificación curricular y evaluación para la historia y ciencias sociales", tipo: "teórico" },
+      { nombre: "Historia de Estados Unidos y América Latina", tipo: "teórico" },
+      { nombre: "Teoría de la historia geográfica de la población", tipo: "teórico" },
+      { nombre: "Planificación curricular y evaluación", tipo: "teórico" },
       { nombre: "Didáctica de la historia", tipo: "teórico" },
-      {
-        nombre: "Taller de integración 2",
-        tipo: "práctico",
-        prerrequisitos: ["Taller de integración 1"]
-      }
+      { nombre: "Taller de integración 2", tipo: "práctico" }
     ]
   },
   {
-    semestre: 7,
+    semestre: "Semestre 7",
     ramos: [
-      { nombre: "Metodología de la investigación en ciencias sociales", tipo: "teórico" },
+      { nombre: "Metodología de la investigación", tipo: "teórico" },
       { nombre: "Historia del tiempo presente", tipo: "teórico" },
-      { nombre: "Geografía de chile y américa", tipo: "teórico" },
+      { nombre: "Geografía de Chile y América", tipo: "teórico" },
       { nombre: "Didáctica de las ciencias sociales", tipo: "teórico" },
-      {
-        nombre: "Practica",
-        tipo: "práctico",
-        prerrequisitos: ["Práctica inicial"]
-      }
+      { nombre: "Práctica intermedia", tipo: "práctico" }
     ]
   },
   {
-    semestre: 8,
+    semestre: "Semestre 8",
     ramos: [
       { nombre: "Seminario de historia mundial", tipo: "teórico" },
-      { nombre: "Seminario de historia de chile", tipo: "teórico" },
-      { nombre: "Seminario de geografía regional de Valparaíso", tipo: "teórico" },
+      { nombre: "Seminario de historia de Chile", tipo: "teórico" },
+      { nombre: "Seminario geografía regional de Valparaíso", tipo: "teórico" },
       { nombre: "Didáctica de la formación ciudadana", tipo: "teórico" },
       { nombre: "Métodos de investigación", tipo: "teórico" },
-      {
-        nombre: "Taller de reflexión sobre la práctica 1",
-        tipo: "teórico",
-        prerrequisitos: ["Práctica inicial", "Practica"]
-      }
+      { nombre: "Taller reflexión práctica 1", tipo: "práctico" }
     ]
   },
   {
-    semestre: 9,
+    semestre: "Semestre 9",
     ramos: [
-      { nombre: "Monográfico historia Y", tipo: "teórico" },
+      { nombre: "Monográfico historia I", tipo: "teórico" },
       { nombre: "Seminario de grado I", tipo: "teórico" },
-      {
-        nombre: "Practica profesional",
-        tipo: "práctico",
-        prerrequisitos: ["Práctica inicial", "Practica", "Taller de reflexión sobre la práctica 1"]
-      }
+      { nombre: "Práctica profesional", tipo: "práctico" }
     ]
   },
   {
-    semestre: 10,
+    semestre: "Semestre 10",
     ramos: [
       { nombre: "Monográfico historia II", tipo: "teórico" },
-      { nombre: "Elaboración de proyectos educativos en formación ciudadana", tipo: "teórico" },
-      {
-        nombre: "Taller de reflexión sobre la práctica 2",
-        tipo: "teórico",
-        prerrequisitos: ["Taller de reflexión sobre la práctica 1", "Practica profesional"]
-      },
+      { nombre: "Elaboración de proyectos educativos", tipo: "teórico" },
+      { nombre: "Taller reflexión práctica 2", tipo: "práctico" },
       { nombre: "Seminario de grado II", tipo: "teórico" }
     ]
   }
 ];
 
-// Colores pastel para diferenciar tipos de ramos
-const colores = {
-  teórico: "#d8eafd",
-  práctico: "#d3f7d5"
+const mallaContainer = document.getElementById('malla');
+
+function renderMalla() {
+  mallaContainer.innerHTML = '';
+  const progreso = JSON.parse(localStorage.getItem('mallaProgreso')) || [];
+
+  malla.forEach((sem) => {
+    const col = document.createElement('div');
+    col.className = 'semestre';
+    const h2 = document.createElement('h2');
+    h2.textContent = sem.semestre;
+    col.appendChild(h2);
+
+    sem.ramos.forEach((ramo) => {
+      const div = document.createElement('div');
+      div.textContent = ramo.nombre;
+      div.className = 'ramo';
+      if (ramo.tipo === 'práctico') div.classList.add('practico');
+      if (progreso.includes(ramo.nombre)) div.classList.add('completado');
+
+      div.onclick = () => {
+        div.classList.toggle('completado');
+      };
+      col.appendChild(div);
+    });
+
+    mallaContainer.appendChild(col);
+  });
+}
+
+document.getElementById('guardar').onclick = () => {
+  const completados = Array.from(document.querySelectorAll('.ramo.completado'))
+    .map(el => el.textContent);
+  localStorage.setItem('mallaProgreso', JSON.stringify(completados));
+  alert('¡Progreso guardado!');
 };
 
-const container = document.querySelector(".malla");
+document.getElementById('reiniciar').onclick = () => {
+  if (confirm("¿Seguro que deseas reiniciar tu progreso?")) {
+    localStorage.removeItem('mallaProgreso');
+    renderMalla();
+  }
+};
 
-malla.forEach((sem) => {
-  const semDiv = document.createElement("div");
-  semDiv.classList.add("semestre");
-
-  const titulo = document.createElement("h3");
-  titulo.textContent = `Semestre ${sem.semestre}`;
-  semDiv.appendChild(titulo);
-
-  sem.ramos.forEach((ramo) => {
-    const div = document.createElement("div");
-    div.classList.add("ramo");
-
-    // Restaurar progreso si está guardado
-    const estado = localStorage.getItem(ramo.nombre);
-    if (estado === "completado") {
-      div.classList.add("completado");
-    }
-
-    div.textContent = ramo.nombre;
-    div.style.backgroundColor = colores[ramo.tipo] || "#eee";
-
-    // Mostrar tooltip al pasar el mouse
-    div.addEventListener("mouseenter", (e) => {
-      const tooltip = document.getElementById("tooltip");
-      tooltip.innerHTML = `
-        <strong>${ramo.nombre}</strong><br>
-        Tipo: ${ramo.tipo}<br>
-        ${ramo.prerrequisitos ? "Prerrequisitos: " + ramo.prerrequisitos.join(", ") : ""}
-      `;
-      tooltip.classList.add("visible");
-    });
-
-    div.addEventListener("mousemove", (e) => {
-      const tooltip = document.getElementById("tooltip");
-      tooltip.style.left = e.pageX + 10 + "px";
-      tooltip.style.top = e.pageY + 10 + "px";
-    });
-
-    div.addEventListener("mouseleave", () => {
-      document.getElementById("tooltip").classList.remove("visible");
-    });
-
-    // Marcar o desmarcar ramo
-    div.addEventListener("click", () => {
-      div.classList.toggle("completado");
-    });
-
-    semDiv.appendChild(div);
-  });
-
-  container.appendChild(semDiv);
-});
-
-// Botón para guardar
-document.getElementById("guardar").addEventListener("click", () => {
-  document.querySelectorAll(".ramo").forEach((div) => {
-    const nombre = div.textContent;
-    if (div.classList.contains("completado")) {
-      localStorage.setItem(nombre, "completado");
-    } else {
-      localStorage.removeItem(nombre);
-    }
-  });
-  alert("¡Progreso guardado!");
-});
-
-// Botón para reiniciar
-document.getElementById("reiniciar").addEventListener("click", () => {
-  document.querySelectorAll(".ramo").forEach((div) => {
-    div.classList.remove("completado");
-    localStorage.removeItem(div.textContent);
-  });
-  alert("Progreso reiniciado");
-});
+renderMalla();
+      
